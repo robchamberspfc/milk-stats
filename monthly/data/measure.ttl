@@ -1,0 +1,48 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+
+
+<http://environment.data.gov.uk/linked-data/def/concept-scheme/measure> a skos:ConceptScheme;
+  dcterms:title "Measure"@en;
+  rdfs:label "Measure"@en;
+  skos:hasTopConcept <http://environment.data.gov.uk/linked-data/def/concept/measure/butterfat>,
+    <http://environment.data.gov.uk/linked-data/def/concept/measure/price>, <http://environment.data.gov.uk/linked-data/def/concept/measure/protein>,
+    <http://environment.data.gov.uk/linked-data/def/concept/measure/volume> .
+
+<http://environment.data.gov.uk/linked-data/def/concept/measure/price> a skos:Concept;
+  rdfs:label "Price";
+  skos:inScheme <http://environment.data.gov.uk/linked-data/def/concept-scheme/measure>;
+  skos:notation "price";
+  skos:prefLabel "Price";
+  skos:topConceptOf <http://environment.data.gov.uk/linked-data/def/concept-scheme/measure> .
+
+<http://environment.data.gov.uk/linked-data/def/concept/measure/butterfat> a skos:Concept;
+  rdfs:label "Butterfat";
+  skos:inScheme <http://environment.data.gov.uk/linked-data/def/concept-scheme/measure>;
+  skos:notation "butterfat";
+  skos:prefLabel "Butterfat";
+  skos:topConceptOf <http://environment.data.gov.uk/linked-data/def/concept-scheme/measure> .
+
+<http://environment.data.gov.uk/linked-data/def/concept/measure/volume> a skos:Concept;
+  rdfs:label "Volume";
+  skos:inScheme <http://environment.data.gov.uk/linked-data/def/concept-scheme/measure>;
+  skos:notation "volume";
+  skos:prefLabel "Volume";
+  skos:topConceptOf <http://environment.data.gov.uk/linked-data/def/concept-scheme/measure> .
+
+<http://environment.data.gov.uk/linked-data/def/concept/measure/protein> a skos:Concept;
+  rdfs:label "Protein";
+  skos:inScheme <http://environment.data.gov.uk/linked-data/def/concept-scheme/measure>;
+  skos:notation "protein";
+  skos:prefLabel "Protein";
+  skos:topConceptOf <http://environment.data.gov.uk/linked-data/def/concept-scheme/measure> .

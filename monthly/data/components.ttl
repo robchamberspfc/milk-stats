@@ -1,0 +1,70 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+
+
+<http://environment.data.gov.uk/linked-data/def/ontology/components> a owl:Ontology;
+  dcterms:title "Components Ontology"@en;
+  rdfs:label "Components Ontology"@en .
+
+<http://environment.data.gov.uk/linked-data/def/measure/price> a qb:MeasureProperty,
+    rdf:Property;
+  rdfs:isDefinedBy <http://environment.data.gov.uk/linked-data/def/ontology/components>;
+  rdfs:label "Price";
+  rdfs:range <http://environment.data.gov.uk/linked-data/def/Price>;
+  rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue>;
+  skos:notation "price" .
+
+<http://environment.data.gov.uk/linked-data/def/measure/volume> a qb:MeasureProperty,
+    rdf:Property;
+  rdfs:isDefinedBy <http://environment.data.gov.uk/linked-data/def/ontology/components>;
+  rdfs:label "Volume";
+  rdfs:range <http://environment.data.gov.uk/linked-data/def/Volume>;
+  rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue>;
+  skos:notation "volume" .
+
+<http://environment.data.gov.uk/linked-data/def/measure/butterfat> a qb:MeasureProperty,
+    rdf:Property;
+  rdfs:isDefinedBy <http://environment.data.gov.uk/linked-data/def/ontology/components>;
+  rdfs:label "Butterfat";
+  rdfs:range <http://environment.data.gov.uk/linked-data/def/Butterfat>;
+  rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue>;
+  skos:notation "butterfat" .
+
+<http://environment.data.gov.uk/linked-data/def/measure/protein> a qb:MeasureProperty,
+    rdf:Property;
+  rdfs:isDefinedBy <http://environment.data.gov.uk/linked-data/def/ontology/components>;
+  rdfs:label "Protein";
+  rdfs:range <http://environment.data.gov.uk/linked-data/def/Protein>;
+  rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue>;
+  skos:notation "protein" .
+
+<http://environment.data.gov.uk/linked-data/def/attribute/pence-per-litre> a qb:AttributeProperty,
+    rdf:Property;
+  rdfs:isDefinedBy <http://environment.data.gov.uk/linked-data/def/ontology/components>;
+  rdfs:label "Pence per litre";
+  rdfs:range <http://environment.data.gov.uk/linked-data/def/PencePerLitre>;
+  skos:notation "pence-per-litre" .
+
+<http://environment.data.gov.uk/linked-data/def/attribute/percentage> a qb:AttributeProperty,
+    rdf:Property;
+  rdfs:isDefinedBy <http://environment.data.gov.uk/linked-data/def/ontology/components>;
+  rdfs:label "Percentage";
+  rdfs:range <http://environment.data.gov.uk/linked-data/def/Percentage>;
+  skos:notation "percentage" .
+
+<http://environment.data.gov.uk/linked-data/def/attribute/million-litres> a qb:AttributeProperty,
+    rdf:Property;
+  rdfs:isDefinedBy <http://environment.data.gov.uk/linked-data/def/ontology/components>;
+  rdfs:label "Million litres";
+  rdfs:range <http://environment.data.gov.uk/linked-data/def/MillionLitres>;
+  skos:notation "million-litres" .
