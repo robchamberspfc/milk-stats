@@ -1,0 +1,11 @@
+title,name,component_attachment,property_template,value_template,datatype,value_transformation
+Year,month,qb:dimension,http://purl.org/linked-data/sdmx/2009/dimension#refPeriod,http://reference.data.gov.uk/id/month/{month},string,
+Geography,geography,qb:dimension,http://purl.org/linked-data/sdmx/2009/dimension#refArea,http://statistics.data.gov.uk/id/statistical-geography/{geography},string,
+Measure type,measure_type,qb:dimension,http://purl.org/linked-data/cube#measureType,http://environment.data.gov.uk/linked-data/def/measure/{measure_type},string,slugize
+Unit of Measure,unit,qb:attribute,http://purl.org/linked-data/cube#unitMeasure,http://environment.data.gov.uk/linked-data/def/attribute/{unit},string,slugize
+Value,value,,http://environment.data.gov.uk/linked-data/def/measure/{measure_type},,number,
+Price,price,qb:measure,http://environment.data.gov.uk/linked-data/def/measure/price,,string,
+Volume,volume,qb:measure,http://environment.data.gov.uk/linked-data/def/measure/volume,,string,
+Butterfat,butterfat,qb:measure,http://environment.data.gov.uk/linked-data/def/measure/butterfat,,string,
+Protein,protein,qb:measure,http://environment.data.gov.uk/linked-data/def/measure/protein,,string,
+Price including bonus payments,price_including_bonus_payments,qb:measure,http://environment.data.gov.uk/linked-data/def/measure/price_including_bonus_payments,,string,

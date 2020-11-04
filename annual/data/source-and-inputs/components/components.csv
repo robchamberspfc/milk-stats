@@ -1,0 +1,9 @@
+Label,Description,Component Type,Codelist
+Price,,Measure,
+Volume,,Measure,
+Butterfat,,Measure,
+Protein,,Measure,
+Price including bonus payments,,Measure,
+Pence per litre,,Attribute,
+Percentage,,Attribute,
+Million litres,,Attribute,
